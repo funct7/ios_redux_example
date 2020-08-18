@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D12B7AB724EBC7000005E2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B7AB624EBC7000005E2AC /* AppDelegate.swift */; };
-		D12B7AB924EBC7000005E2AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B7AB824EBC7000005E2AC /* SceneDelegate.swift */; };
-		D12B7ABB24EBC7000005E2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B7ABA24EBC7000005E2AC /* ViewController.swift */; };
-		D12B7ABE24EBC7000005E2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12B7ABC24EBC7000005E2AC /* Main.storyboard */; };
-		D12B7AC024EBC7020005E2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12B7ABF24EBC7020005E2AC /* Assets.xcassets */; };
-		D12B7AC324EBC7020005E2AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12B7AC124EBC7020005E2AC /* LaunchScreen.storyboard */; };
+		D12B7AD124EBC7710005E2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B7AD024EBC7710005E2AC /* AppDelegate.swift */; };
+		D12B7AD324EBC7710005E2AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B7AD224EBC7710005E2AC /* SceneDelegate.swift */; };
+		D12B7AD524EBC7710005E2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B7AD424EBC7710005E2AC /* ViewController.swift */; };
+		D12B7AD824EBC7710005E2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12B7AD624EBC7710005E2AC /* Main.storyboard */; };
+		D12B7ADA24EBC7730005E2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12B7AD924EBC7730005E2AC /* Assets.xcassets */; };
+		D12B7ADD24EBC7730005E2AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12B7ADB24EBC7730005E2AC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D12B7AB324EBC7000005E2AC /* ReduxEssentialsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxEssentialsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D12B7AB624EBC7000005E2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D12B7AB824EBC7000005E2AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D12B7ABA24EBC7000005E2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D12B7ABD24EBC7000005E2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D12B7ABF24EBC7020005E2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D12B7AC224EBC7020005E2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D12B7AC424EBC7020005E2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D12B7ACE24EBC7710005E2AC /* ReSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12B7AD024EBC7710005E2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D12B7AD224EBC7710005E2AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D12B7AD424EBC7710005E2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D12B7AD724EBC7710005E2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D12B7AD924EBC7730005E2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D12B7ADC24EBC7730005E2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D12B7ADE24EBC7730005E2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D12B7AB024EBC7000005E2AC /* Frameworks */ = {
+		D12B7ACB24EBC7710005E2AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,7 +40,7 @@
 		D12B7AAA24EBC7000005E2AC = {
 			isa = PBXGroup;
 			children = (
-				D12B7AB524EBC7000005E2AC /* ReduxEssentialsExample */,
+				D12B7ACF24EBC7710005E2AC /* ReSwift */,
 				D12B7AB424EBC7000005E2AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,43 +48,43 @@
 		D12B7AB424EBC7000005E2AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D12B7AB324EBC7000005E2AC /* ReduxEssentialsExample.app */,
+				D12B7ACE24EBC7710005E2AC /* ReSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D12B7AB524EBC7000005E2AC /* ReduxEssentialsExample */ = {
+		D12B7ACF24EBC7710005E2AC /* ReSwift */ = {
 			isa = PBXGroup;
 			children = (
-				D12B7AB624EBC7000005E2AC /* AppDelegate.swift */,
-				D12B7AB824EBC7000005E2AC /* SceneDelegate.swift */,
-				D12B7ABA24EBC7000005E2AC /* ViewController.swift */,
-				D12B7ABC24EBC7000005E2AC /* Main.storyboard */,
-				D12B7ABF24EBC7020005E2AC /* Assets.xcassets */,
-				D12B7AC124EBC7020005E2AC /* LaunchScreen.storyboard */,
-				D12B7AC424EBC7020005E2AC /* Info.plist */,
+				D12B7AD024EBC7710005E2AC /* AppDelegate.swift */,
+				D12B7AD224EBC7710005E2AC /* SceneDelegate.swift */,
+				D12B7AD424EBC7710005E2AC /* ViewController.swift */,
+				D12B7AD624EBC7710005E2AC /* Main.storyboard */,
+				D12B7AD924EBC7730005E2AC /* Assets.xcassets */,
+				D12B7ADB24EBC7730005E2AC /* LaunchScreen.storyboard */,
+				D12B7ADE24EBC7730005E2AC /* Info.plist */,
 			);
-			path = ReduxEssentialsExample;
+			path = ReSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D12B7AB224EBC7000005E2AC /* ReduxEssentialsExample */ = {
+		D12B7ACD24EBC7710005E2AC /* ReSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D12B7AC724EBC7030005E2AC /* Build configuration list for PBXNativeTarget "ReduxEssentialsExample" */;
+			buildConfigurationList = D12B7ADF24EBC7730005E2AC /* Build configuration list for PBXNativeTarget "ReSwift" */;
 			buildPhases = (
-				D12B7AAF24EBC7000005E2AC /* Sources */,
-				D12B7AB024EBC7000005E2AC /* Frameworks */,
-				D12B7AB124EBC7000005E2AC /* Resources */,
+				D12B7ACA24EBC7710005E2AC /* Sources */,
+				D12B7ACB24EBC7710005E2AC /* Frameworks */,
+				D12B7ACC24EBC7710005E2AC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ReduxEssentialsExample;
-			productName = ReduxEssentialsExample;
-			productReference = D12B7AB324EBC7000005E2AC /* ReduxEssentialsExample.app */;
+			name = ReSwift;
+			productName = ReSwift;
+			productReference = D12B7ACE24EBC7710005E2AC /* ReSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +97,7 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = Knowre;
 				TargetAttributes = {
-					D12B7AB224EBC7000005E2AC = {
+					D12B7ACD24EBC7710005E2AC = {
 						CreatedOnToolsVersion = 11.6;
 					};
 				};
@@ -115,50 +115,50 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D12B7AB224EBC7000005E2AC /* ReduxEssentialsExample */,
+				D12B7ACD24EBC7710005E2AC /* ReSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D12B7AB124EBC7000005E2AC /* Resources */ = {
+		D12B7ACC24EBC7710005E2AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D12B7AC324EBC7020005E2AC /* LaunchScreen.storyboard in Resources */,
-				D12B7AC024EBC7020005E2AC /* Assets.xcassets in Resources */,
-				D12B7ABE24EBC7000005E2AC /* Main.storyboard in Resources */,
+				D12B7ADD24EBC7730005E2AC /* LaunchScreen.storyboard in Resources */,
+				D12B7ADA24EBC7730005E2AC /* Assets.xcassets in Resources */,
+				D12B7AD824EBC7710005E2AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D12B7AAF24EBC7000005E2AC /* Sources */ = {
+		D12B7ACA24EBC7710005E2AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D12B7ABB24EBC7000005E2AC /* ViewController.swift in Sources */,
-				D12B7AB724EBC7000005E2AC /* AppDelegate.swift in Sources */,
-				D12B7AB924EBC7000005E2AC /* SceneDelegate.swift in Sources */,
+				D12B7AD524EBC7710005E2AC /* ViewController.swift in Sources */,
+				D12B7AD124EBC7710005E2AC /* AppDelegate.swift in Sources */,
+				D12B7AD324EBC7710005E2AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D12B7ABC24EBC7000005E2AC /* Main.storyboard */ = {
+		D12B7AD624EBC7710005E2AC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D12B7ABD24EBC7000005E2AC /* Base */,
+				D12B7AD724EBC7710005E2AC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D12B7AC124EBC7020005E2AC /* LaunchScreen.storyboard */ = {
+		D12B7ADB24EBC7730005E2AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D12B7AC224EBC7020005E2AC /* Base */,
+				D12B7ADC24EBC7730005E2AC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -280,36 +280,36 @@
 			};
 			name = Release;
 		};
-		D12B7AC824EBC7030005E2AC /* Debug */ = {
+		D12B7AE024EBC7730005E2AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8HCBQJDHQ6;
-				INFOPLIST_FILE = ReduxEssentialsExample/Info.plist;
+				INFOPLIST_FILE = ReSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.knowre.ReduxEssentialsExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knowre.ReSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D12B7AC924EBC7030005E2AC /* Release */ = {
+		D12B7AE124EBC7730005E2AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8HCBQJDHQ6;
-				INFOPLIST_FILE = ReduxEssentialsExample/Info.plist;
+				INFOPLIST_FILE = ReSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.knowre.ReduxEssentialsExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knowre.ReSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,11 +328,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D12B7AC724EBC7030005E2AC /* Build configuration list for PBXNativeTarget "ReduxEssentialsExample" */ = {
+		D12B7ADF24EBC7730005E2AC /* Build configuration list for PBXNativeTarget "ReSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D12B7AC824EBC7030005E2AC /* Debug */,
-				D12B7AC924EBC7030005E2AC /* Release */,
+				D12B7AE024EBC7730005E2AC /* Debug */,
+				D12B7AE124EBC7730005E2AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

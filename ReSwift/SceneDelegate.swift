@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  ReduxEssentialsExample
+//  ReSwift
 //
 //  Created by Joshua Park on 2020/08/18.
 //  Copyright © 2020 Knowre. All rights reserved.
