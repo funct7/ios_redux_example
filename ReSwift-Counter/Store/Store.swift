@@ -13,7 +13,7 @@ struct AppState : StateType {
     var counter = Counter.State()
 }
 
-func appReducer(action: Action, state: AppState?) -> AppState {
+private func appReducer(action: Action, state: AppState?) -> AppState {
     [Counter.self].reduce(state ?? .init()) { (state, slice) in
         slice.merger(
             global: state,

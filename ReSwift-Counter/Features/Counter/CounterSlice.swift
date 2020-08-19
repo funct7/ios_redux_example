@@ -9,15 +9,6 @@
 import Foundation
 import ReSwift
 
-protocol Slice {
-    associatedtype GlobalState
-    associatedtype SliceState
-    
-    static func reducer(action: ReSwift.Action, state: SliceState) -> SliceState
-    static func selector(state: GlobalState) -> SliceState
-    static func merger(global: GlobalState, state: SliceState) -> GlobalState
-}
-
 enum Counter : Slice {
     
     typealias SliceState = State
