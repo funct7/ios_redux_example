@@ -53,10 +53,7 @@ class ViewController: UIViewController, StoreSubscriber {
         }
     }
     private var incrementAmount: Int? { Int(inputValue) }
-    
-    // TODO: Refactor and use default implementations if possible
-    private var state: Counter.State { Counter.selector(state: store.state) }
-    
+
     @IBOutlet
     private weak var countLabel: UILabel!
     

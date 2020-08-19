@@ -33,4 +33,3 @@ let store = Store(
     reducer: appReducer,
     state: AppState(),
     middleware: [thunkMiddleware])
-
