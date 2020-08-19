@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D12B7AD124EBC7710005E2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B7AD024EBC7710005E2AC /* AppDelegate.swift */; };
-		D12B7AD324EBC7710005E2AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B7AD224EBC7710005E2AC /* SceneDelegate.swift */; };
 		D12B7AD524EBC7710005E2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B7AD424EBC7710005E2AC /* ViewController.swift */; };
 		D12B7AD824EBC7710005E2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12B7AD624EBC7710005E2AC /* Main.storyboard */; };
 		D12B7ADA24EBC7730005E2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12B7AD924EBC7730005E2AC /* Assets.xcassets */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		D12B7ACE24EBC7710005E2AC /* Redux-ReSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux-ReSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12B7AD024EBC7710005E2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D12B7AD224EBC7710005E2AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D12B7AD424EBC7710005E2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D12B7AD724EBC7710005E2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D12B7AD924EBC7730005E2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,8 +56,8 @@
 		D12B7ACF24EBC7710005E2AC /* Redux-ReSwift */ = {
 			isa = PBXGroup;
 			children = (
+				D1E8815124ECA865000ABB39 /* Features */,
 				D12B7AD024EBC7710005E2AC /* AppDelegate.swift */,
-				D12B7AD224EBC7710005E2AC /* SceneDelegate.swift */,
 				D12B7AD424EBC7710005E2AC /* ViewController.swift */,
 				D12B7AD624EBC7710005E2AC /* Main.storyboard */,
 				D12B7AD924EBC7730005E2AC /* Assets.xcassets */,
@@ -67,6 +65,13 @@
 				D12B7ADE24EBC7730005E2AC /* Info.plist */,
 			);
 			path = "Redux-ReSwift";
+			sourceTree = "<group>";
+		};
+		D1E8815124ECA865000ABB39 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +153,6 @@
 			files = (
 				D12B7AD524EBC7710005E2AC /* ViewController.swift in Sources */,
 				D12B7AD124EBC7710005E2AC /* AppDelegate.swift in Sources */,
-				D12B7AD324EBC7710005E2AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +303,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.knowre.ReSwift;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.knowre.Redux-ReSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +322,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.knowre.ReSwift;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.knowre.Redux-ReSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
