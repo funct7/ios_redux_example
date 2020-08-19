@@ -69,4 +69,8 @@ class ViewController: UIViewController, StoreSubscriber {
         dispatch(.incrementByAmount(amount))
     }
     
+    @IBAction
+    private func backgroundAction(_ sender: Any) {
+        textField.resignFirstResponder()
+    }
 }
