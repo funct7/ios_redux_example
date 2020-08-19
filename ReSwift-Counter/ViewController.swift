@@ -65,10 +65,19 @@ class ViewController: UIViewController, StoreSubscriber {
     }
     
     @IBAction
-    private func asyncAddAction(_ sender: Any) {
+    private func asyncAddAction(_ sender: UIButton) {
         // TODO: Handle validation. How?
         guard let amount = Int(textField.text ?? "0") else { return }
         dispatch(Counter.incrementAsync(amount: amount))
+        
+        let color = sender.backgroundColor ?? .systemBackground
+        
+        UIView.animate(
+            withDuration: 1,
+            animations: { sender.backgroundColor = .systemBlue },
+            completion: { _ in
+                sender.backgroundColor = color
+            })
     }
     
     @IBAction
