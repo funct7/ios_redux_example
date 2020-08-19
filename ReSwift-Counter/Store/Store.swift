@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import ReSwift
+
+struct AppState : StateType {
+    var counter = Counter.State()
+}
+
+func appReducer(action: Action, state: AppState?) -> AppState {
+    [Counter.self].reduce(state ?? .init()) { (state, slice) in
+        slice.merger(
+            global: state,
+            state: slice.reducer(
+                action: action,
+                state: slice.selector(state: state)))
+    }
+}
+
+let store = Store(
+    reducer: appReducer,
+    state: AppState())
+
