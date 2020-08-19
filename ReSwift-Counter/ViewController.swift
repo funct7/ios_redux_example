@@ -18,6 +18,13 @@ class ViewController: UIViewController, StoreSubscriber {
     }
 
     // MARK: Inherited
+    
+    override
+    func viewDidLoad() {
+        super.viewDidLoad()
+        
+        textField.text = inputValue
+    }
 
     override
     func viewWillAppear(_ animated: Bool) {
@@ -38,6 +45,15 @@ class ViewController: UIViewController, StoreSubscriber {
     
     // MARK: Private
     
+    private var inputValue: String = "2" {
+        didSet {
+            [addButton, asyncAddButton].forEach {
+                $0?.isEnabled = incrementAmount != nil
+            }
+        }
+    }
+    private var incrementAmount: Int? { Int(inputValue) }
+    
     // TODO: Refactor and use default implementations if possible
     private var state: Counter.State { Counter.selector(state: store.state) }
     
@@ -46,6 +62,12 @@ class ViewController: UIViewController, StoreSubscriber {
     
     @IBOutlet
     private weak var textField: UITextField!
+    
+    @IBOutlet
+    private weak var addButton: UIButton!
+    
+    @IBOutlet
+    private weak var asyncAddButton: UIButton!
     
     @IBAction
     private func decrementAction(_ sender: Any) {
@@ -58,30 +80,32 @@ class ViewController: UIViewController, StoreSubscriber {
     }
     
     @IBAction
+    private func textDidChange(_ sender: UITextField) {
+        inputValue = sender.text ?? ""
+    }
+    
+    @IBAction
     private func addAction(_ sender: Any) {
-        // TODO: Handle validation. How?
-        guard let amount = Int(textField.text ?? "0") else { return }
+        guard let amount = incrementAmount else { return }
         dispatch(.incrementByAmount(amount))
     }
     
     @IBAction
     private func asyncAddAction(_ sender: UIButton) {
-        // TODO: Handle validation. How?
-        guard let amount = Int(textField.text ?? "0") else { return }
+        guard let amount = incrementAmount else { return }
         dispatch(Counter.incrementAsync(amount: amount))
         
-        let color = sender.backgroundColor ?? .systemBackground
+        sender.backgroundColor = .systemBackground
         
         UIView.animate(
             withDuration: 1,
             animations: { sender.backgroundColor = .systemBlue },
-            completion: { _ in
-                sender.backgroundColor = color
-            })
+            completion: { _ in sender.backgroundColor = .systemBackground })
     }
     
     @IBAction
     private func backgroundAction(_ sender: Any) {
         textField.resignFirstResponder()
     }
+    
 }
