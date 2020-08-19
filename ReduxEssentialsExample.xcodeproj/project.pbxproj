@@ -13,16 +13,18 @@
 		D12B7ADA24EBC7730005E2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12B7AD924EBC7730005E2AC /* Assets.xcassets */; };
 		D12B7ADD24EBC7730005E2AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12B7ADB24EBC7730005E2AC /* LaunchScreen.storyboard */; };
 		D1E8815024ECA75F000ABB39 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D1E8814F24ECA75F000ABB39 /* ReSwift */; };
+		D1E8815424ECAEF2000ABB39 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E8815324ECAEF2000ABB39 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D12B7ACE24EBC7710005E2AC /* Redux-ReSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux-ReSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12B7ACE24EBC7710005E2AC /* ReSwift-Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReSwift-Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12B7AD024EBC7710005E2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D12B7AD424EBC7710005E2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D12B7AD724EBC7710005E2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D12B7AD924EBC7730005E2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D12B7ADC24EBC7730005E2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D12B7ADE24EBC7730005E2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1E8815324ECAEF2000ABB39 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,7 @@
 		D12B7AAA24EBC7000005E2AC = {
 			isa = PBXGroup;
 			children = (
-				D12B7ACF24EBC7710005E2AC /* Redux-ReSwift */,
+				D12B7ACF24EBC7710005E2AC /* ReSwift-Counter */,
 				D12B7AB424EBC7000005E2AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,14 +50,15 @@
 		D12B7AB424EBC7000005E2AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D12B7ACE24EBC7710005E2AC /* Redux-ReSwift.app */,
+				D12B7ACE24EBC7710005E2AC /* ReSwift-Counter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D12B7ACF24EBC7710005E2AC /* Redux-ReSwift */ = {
+		D12B7ACF24EBC7710005E2AC /* ReSwift-Counter */ = {
 			isa = PBXGroup;
 			children = (
+				D1E8815224ECAE0F000ABB39 /* Store */,
 				D1E8815124ECA865000ABB39 /* Features */,
 				D12B7AD024EBC7710005E2AC /* AppDelegate.swift */,
 				D12B7AD424EBC7710005E2AC /* ViewController.swift */,
@@ -64,7 +67,7 @@
 				D12B7ADB24EBC7730005E2AC /* LaunchScreen.storyboard */,
 				D12B7ADE24EBC7730005E2AC /* Info.plist */,
 			);
-			path = "Redux-ReSwift";
+			path = "ReSwift-Counter";
 			sourceTree = "<group>";
 		};
 		D1E8815124ECA865000ABB39 /* Features */ = {
@@ -74,12 +77,20 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
+		D1E8815224ECAE0F000ABB39 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				D1E8815324ECAEF2000ABB39 /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D12B7ACD24EBC7710005E2AC /* Redux-ReSwift */ = {
+		D12B7ACD24EBC7710005E2AC /* ReSwift-Counter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D12B7ADF24EBC7730005E2AC /* Build configuration list for PBXNativeTarget "Redux-ReSwift" */;
+			buildConfigurationList = D12B7ADF24EBC7730005E2AC /* Build configuration list for PBXNativeTarget "ReSwift-Counter" */;
 			buildPhases = (
 				D12B7ACA24EBC7710005E2AC /* Sources */,
 				D12B7ACB24EBC7710005E2AC /* Frameworks */,
@@ -89,12 +100,12 @@
 			);
 			dependencies = (
 			);
-			name = "Redux-ReSwift";
+			name = "ReSwift-Counter";
 			packageProductDependencies = (
 				D1E8814F24ECA75F000ABB39 /* ReSwift */,
 			);
 			productName = ReSwift;
-			productReference = D12B7ACE24EBC7710005E2AC /* Redux-ReSwift.app */;
+			productReference = D12B7ACE24EBC7710005E2AC /* ReSwift-Counter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D12B7ACD24EBC7710005E2AC /* Redux-ReSwift */,
+				D12B7ACD24EBC7710005E2AC /* ReSwift-Counter */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E8815424ECAEF2000ABB39 /* Store.swift in Sources */,
 				D12B7AD524EBC7710005E2AC /* ViewController.swift in Sources */,
 				D12B7AD124EBC7710005E2AC /* AppDelegate.swift in Sources */,
 			);
@@ -304,8 +316,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.knowre.Redux-ReSwift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.knowre.ReSwift-Counter";
+				PRODUCT_NAME = "ReSwift-Counter";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,8 +335,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.knowre.Redux-ReSwift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.knowre.ReSwift-Counter";
+				PRODUCT_NAME = "ReSwift-Counter";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -342,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D12B7ADF24EBC7730005E2AC /* Build configuration list for PBXNativeTarget "Redux-ReSwift" */ = {
+		D12B7ADF24EBC7730005E2AC /* Build configuration list for PBXNativeTarget "ReSwift-Counter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D12B7AE024EBC7730005E2AC /* Debug */,
