@@ -23,6 +23,7 @@ class ViewController: UIViewController, StoreSubscriber {
     func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // TODO: Refactor and use default implementations using slice
         store.subscribe(self) {
             $0.select { Counter.selector(state: $0) }
         }
@@ -37,8 +38,10 @@ class ViewController: UIViewController, StoreSubscriber {
     
     // MARK: Private
     
+    // TODO: Refactor and use default implementations if possible
     private var state: Counter.State { Counter.selector(state: store.state) }
     
+    // TODO: Refactor and use default implementations if possible
     private func dispatch(_ action: Counter.Action) {
         store.dispatch(action)
     }

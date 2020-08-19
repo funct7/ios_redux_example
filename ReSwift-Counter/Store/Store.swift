@@ -15,6 +15,7 @@ struct AppState : StateType {
 
 private func appReducer(action: Action, state: AppState?) -> AppState {
     [Counter.self].reduce(state ?? .init()) { (state, slice) in
+        // TODO: Refactor into linear style code
         slice.merger(
             global: state,
             state: slice.reducer(

@@ -11,8 +11,6 @@ import ReSwift
 
 enum Counter : Slice {
     
-    typealias SliceState = State
-    
     enum Action : ReSwift.Action {
         case increment
         case decrement
