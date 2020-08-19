@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,11 @@
 		D12B7AD824EBC7710005E2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12B7AD624EBC7710005E2AC /* Main.storyboard */; };
 		D12B7ADA24EBC7730005E2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12B7AD924EBC7730005E2AC /* Assets.xcassets */; };
 		D12B7ADD24EBC7730005E2AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12B7ADB24EBC7730005E2AC /* LaunchScreen.storyboard */; };
+		D1E8815024ECA75F000ABB39 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D1E8814F24ECA75F000ABB39 /* ReSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D12B7ACE24EBC7710005E2AC /* ReSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12B7ACE24EBC7710005E2AC /* Redux-ReSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux-ReSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12B7AD024EBC7710005E2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D12B7AD224EBC7710005E2AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D12B7AD424EBC7710005E2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E8815024ECA75F000ABB39 /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +42,7 @@
 		D12B7AAA24EBC7000005E2AC = {
 			isa = PBXGroup;
 			children = (
-				D12B7ACF24EBC7710005E2AC /* ReSwift */,
+				D12B7ACF24EBC7710005E2AC /* Redux-ReSwift */,
 				D12B7AB424EBC7000005E2AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +50,12 @@
 		D12B7AB424EBC7000005E2AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D12B7ACE24EBC7710005E2AC /* ReSwift.app */,
+				D12B7ACE24EBC7710005E2AC /* Redux-ReSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D12B7ACF24EBC7710005E2AC /* ReSwift */ = {
+		D12B7ACF24EBC7710005E2AC /* Redux-ReSwift */ = {
 			isa = PBXGroup;
 			children = (
 				D12B7AD024EBC7710005E2AC /* AppDelegate.swift */,
@@ -64,15 +66,15 @@
 				D12B7ADB24EBC7730005E2AC /* LaunchScreen.storyboard */,
 				D12B7ADE24EBC7730005E2AC /* Info.plist */,
 			);
-			path = ReSwift;
+			path = "Redux-ReSwift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D12B7ACD24EBC7710005E2AC /* ReSwift */ = {
+		D12B7ACD24EBC7710005E2AC /* Redux-ReSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D12B7ADF24EBC7730005E2AC /* Build configuration list for PBXNativeTarget "ReSwift" */;
+			buildConfigurationList = D12B7ADF24EBC7730005E2AC /* Build configuration list for PBXNativeTarget "Redux-ReSwift" */;
 			buildPhases = (
 				D12B7ACA24EBC7710005E2AC /* Sources */,
 				D12B7ACB24EBC7710005E2AC /* Frameworks */,
@@ -82,9 +84,12 @@
 			);
 			dependencies = (
 			);
-			name = ReSwift;
+			name = "Redux-ReSwift";
+			packageProductDependencies = (
+				D1E8814F24ECA75F000ABB39 /* ReSwift */,
+			);
 			productName = ReSwift;
-			productReference = D12B7ACE24EBC7710005E2AC /* ReSwift.app */;
+			productReference = D12B7ACE24EBC7710005E2AC /* Redux-ReSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,11 +116,14 @@
 				Base,
 			);
 			mainGroup = D12B7AAA24EBC7000005E2AC;
+			packageReferences = (
+				D1E8814E24ECA75F000ABB39 /* XCRemoteSwiftPackageReference "ReSwift" */,
+			);
 			productRefGroup = D12B7AB424EBC7000005E2AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D12B7ACD24EBC7710005E2AC /* ReSwift */,
+				D12B7ACD24EBC7710005E2AC /* Redux-ReSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -286,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8HCBQJDHQ6;
-				INFOPLIST_FILE = ReSwift/Info.plist;
+				INFOPLIST_FILE = "${TARGET_NAME}/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8HCBQJDHQ6;
-				INFOPLIST_FILE = ReSwift/Info.plist;
+				INFOPLIST_FILE = "${TARGET_NAME}/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D12B7ADF24EBC7730005E2AC /* Build configuration list for PBXNativeTarget "ReSwift" */ = {
+		D12B7ADF24EBC7730005E2AC /* Build configuration list for PBXNativeTarget "Redux-ReSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D12B7AE024EBC7730005E2AC /* Debug */,
@@ -338,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1E8814E24ECA75F000ABB39 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1E8814F24ECA75F000ABB39 /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1E8814E24ECA75F000ABB39 /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D12B7AAB24EBC7000005E2AC /* Project object */;
 }
