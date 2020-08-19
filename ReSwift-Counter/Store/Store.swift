@@ -8,6 +8,7 @@
 
 import Foundation
 import ReSwift
+import ReSwift_Thunk
 
 struct AppState : StateType {
     var counter = Counter.State()
@@ -24,7 +25,10 @@ private func appReducer(action: Action, state: AppState?) -> AppState {
     }
 }
 
+private let thunkMiddleware: Middleware<AppState> = createThunkMiddleware()
+
 let store = Store(
     reducer: appReducer,
-    state: AppState())
+    state: AppState(),
+    middleware: [thunkMiddleware])
 
