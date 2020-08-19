@@ -49,6 +49,9 @@ class ViewController: UIViewController, StoreSubscriber {
     @IBOutlet
     private weak var countLabel: UILabel!
     
+    @IBOutlet
+    private weak var textField: UITextField!
+    
     @IBAction
     private func decrementAction(_ sender: Any) {
         dispatch(.decrement)
@@ -57,6 +60,13 @@ class ViewController: UIViewController, StoreSubscriber {
     @IBAction
     private func incrementAction(_ sender: Any) {
         dispatch(.increment)
+    }
+    
+    @IBAction
+    private func addAction(_ sender: Any) {
+        // TODO: Handle validation. How?
+        guard let amount = Int(textField.text ?? "0") else { return }
+        dispatch(.incrementByAmount(amount))
     }
     
 }
