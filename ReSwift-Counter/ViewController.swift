@@ -41,11 +41,6 @@ class ViewController: UIViewController, StoreSubscriber {
     // TODO: Refactor and use default implementations if possible
     private var state: Counter.State { Counter.selector(state: store.state) }
     
-    // TODO: Refactor and use default implementations if possible
-    private func dispatch(_ action: Counter.Action) {
-        store.dispatch(action)
-    }
-    
     @IBOutlet
     private weak var countLabel: UILabel!
     
@@ -67,6 +62,13 @@ class ViewController: UIViewController, StoreSubscriber {
         // TODO: Handle validation. How?
         guard let amount = Int(textField.text ?? "0") else { return }
         dispatch(.incrementByAmount(amount))
+    }
+    
+    @IBAction
+    private func asyncAddAction(_ sender: Any) {
+        // TODO: Handle validation. How?
+        guard let amount = Int(textField.text ?? "0") else { return }
+        dispatch(Counter.incrementAsync(amount: amount))
     }
     
     @IBAction

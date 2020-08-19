@@ -8,6 +8,7 @@
 
 import Foundation
 import ReSwift
+import ReSwift_Thunk
 
 enum Counter : Slice {
     
@@ -35,11 +36,11 @@ enum Counter : Slice {
         return state
     }
     
-    static func incrementAsync(amount: Int)
-        -> (Store<AppState>) -> Void
-    {
-        { store in
-            store.dispatch(Action.incrementByAmount(amount))
+    static func incrementAsync(amount: Int) -> Thunk<AppState> {
+        Thunk<AppState> { (dispatch, _) in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                dispatch(Action.incrementByAmount(amount))
+            }
         }
     }
     
@@ -52,3 +53,6 @@ enum Counter : Slice {
     }
     
 }
+
+// TODO: Refactor and use default implementations if possible
+func dispatch(_ action: Counter.Action) { store.dispatch(action) }

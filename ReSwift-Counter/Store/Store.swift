@@ -27,6 +27,8 @@ private func appReducer(action: Action, state: AppState?) -> AppState {
 
 private let thunkMiddleware: Middleware<AppState> = createThunkMiddleware()
 
+func dispatch(_ thunk: Thunk<AppState>) { store.dispatch(thunk) }
+
 let store = Store(
     reducer: appReducer,
     state: AppState(),
