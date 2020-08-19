@@ -10,6 +10,14 @@ import UIKit
 import ReSwift
 
 class ViewController: UIViewController, StoreSubscriber {
+    
+    // MARK: Implement - Store subsccriber
+    
+    func newState(state: Counter.State) {
+        countLabel.text = "\(state.value)"
+    }
+
+    // MARK: Inherited
 
     override
     func viewWillAppear(_ animated: Bool) {
@@ -26,34 +34,26 @@ class ViewController: UIViewController, StoreSubscriber {
         
         store.unsubscribe(self)
     }
-
-    func newState(state: Counter.State) {
-        countLabel.text = "\(state.value)"
-    }
     
     // MARK: Private
     
     private var state: Counter.State { Counter.selector(state: store.state) }
+    
+    private func dispatch(_ action: Counter.Action) {
+        store.dispatch(action)
+    }
     
     @IBOutlet
     private weak var countLabel: UILabel!
     
     @IBAction
     private func decrementAction(_ sender: Any) {
-        store.dispatchAction(.decrement)
+        dispatch(.decrement)
     }
     
     @IBAction
     private func incrementAction(_ sender: Any) {
-        store.dispatchAction(.increment)
-    }
-    
-}
-
-private extension Store where State == AppState {
-    
-    func dispatchAction(_ action: Counter.Action) {
-        dispatch(action)
+        dispatch(.increment)
     }
     
 }
